@@ -1,12 +1,17 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Partido {
-    private LocalDate fecha;
-    private LocalTime horario;
+    protected LocalDate fecha;
+    protected LocalTime horario;
     protected int duracion;
     protected int tiempoAdicional;
     protected Estadio estadio;
+    protected List<Evento> eventos;
+    protected List<Participacion> participaciones;
+    protected List<Arbitraje> arbitrajes;
 
     public Partido(LocalDate fecha, LocalTime horario, int duracion, int tiempoAdicional, Estadio estadio){
         this.fecha = fecha;
@@ -14,6 +19,9 @@ public class Partido {
         this.duracion = duracion;
         this.tiempoAdicional = tiempoAdicional;
         this.estadio = estadio;
+        this.eventos = new ArrayList<>();
+        this.participaciones = new ArrayList<>();
+        this.arbitrajes = new ArrayList<>();
     }
 
     public LocalDate getFecha(){
@@ -30,5 +38,17 @@ public class Partido {
 
     public void setHorario(LocalTime horario){
         this.horario = horario;
+    }
+
+    public void agregarEvento(Evento e){
+        this.eventos.add(e);
+    }
+
+    public void agregarParticipacion(Participacion p){
+        this.participaciones.add(p);
+    }
+
+    public void agregarArbitraje(Arbitraje a){
+        this.arbitrajes.add(a);
     }
 }
