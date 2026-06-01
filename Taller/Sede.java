@@ -6,13 +6,15 @@ public class Sede{
     protected float alturaNivelMar;
     protected String clima;
     protected String zonaHoraria;
+    protected Pais pais;
     protected List<Estadio> estadios;
 
-    public Sede(String ciudad, float alturaNivelMar, String clima, String zonaHoraria){
+    public Sede(String ciudad, float alturaNivelMar, String clima, String zonaHoraria, Pais pais){
         this.ciudad = ciudad;
         this.alturaNivelMar = alturaNivelMar;
         this.clima = clima;
         this.zonaHoraria = zonaHoraria;
+        this.pais = pais;
         this.estadios = new ArrayList<>();
     }
 
@@ -53,4 +55,11 @@ public class Sede{
         this.estadios.add(estadio);
     }
 
+    public Pais getPais(){
+        return pais;
+    }
+
+    public void setPais(Pais pais){
+        this.pais = pais;
+    }
 }
