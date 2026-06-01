@@ -1,11 +1,11 @@
-public class Jugador {
+public class Jugador extends Persona {
     protected int dorsal;
     protected Posicion posicion;
     protected float peso;
     protected float altura;
 
-    public Jugador(int dorsal, Posicion posicion, float peso, float altura){
-        this.dorsal = dorsal;
+    public Jugador(String nombre, int fecNacimeinto, int dorsal, Posicion posicion, float peso, float altura){
+        super(nombre, fecNacimeinto);
         this.posicion = posicion;
         this.peso = peso;
         this.altura = altura;

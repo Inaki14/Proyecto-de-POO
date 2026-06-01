@@ -1,14 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Mundial {
     protected int anio;
     protected String mascota;
     protected int fechaDesde;
     protected int fechaHasta;
+    protected List<Sede> sedes;
 
     public Mundial(int anio, String mascota, int fechaDesde, int fechaHasta){
         this.anio = anio;
         this.mascota = mascota;
         this.fechaDesde = fechaDesde;
         this.fechaHasta = fechaHasta;
+        this.sedes = new ArrayList<>();
     }
 
     public int getanio(){
@@ -43,5 +48,7 @@ public class Mundial {
         this.fechaHasta = fechaHasta;
     }
 
-
+    public void agregarSede(Sede sede){
+        this.sedes.add(sede);
+    }
 }

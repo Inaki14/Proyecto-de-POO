@@ -1,7 +1,8 @@
-public class DirectorTecnico {
+public class DirectorTecnico extends Persona{
     protected int fechaNombramiento;
 
-    public DirectorTecnico(int fechaNombramiento){
+    public DirectorTecnico(String nombre, int fecNacimiento, int fechaNombramiento){
+        super(nombre, fecNacimiento);
         this.fechaNombramiento = fechaNombramiento;
     }
 
