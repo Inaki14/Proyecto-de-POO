@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Partido {
     protected LocalDate fecha;
@@ -40,6 +40,30 @@ public class Partido {
         this.horario = horario;
     }
 
+    public int getduracion(){
+        return duracion;
+    }
+    
+    public Estadio getEstadio(){
+        return estadio;
+    }
+
+    public int getTiempoAdicional(){
+        return tiempoAdicional;
+    }
+    
+    public void setduracion(int duracion){
+        this.duracion = duracion;
+    }
+
+    public void setTiempoAdicional(int tiempoAdicional){
+        this.tiempoAdicional = tiempoAdicional;
+    }
+
+    public void setEstadio(Estadio estadio){
+        this.estadio = estadio;
+    }
+    
     public void agregarEvento(Evento e){
         this.eventos.add(e);
     }
