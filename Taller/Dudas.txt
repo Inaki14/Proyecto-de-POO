@@ -1,3 +1,0 @@
-DUDAS: 
-en la clase fase que usa una enumeracion como atributo es necesario hacer el set y el get de la enumeracion?
-falta la clase partidos (No se bien como hacer esos atributos)
