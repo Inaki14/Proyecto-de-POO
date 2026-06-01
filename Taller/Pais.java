@@ -12,16 +12,16 @@ public class Pais {
         return nombre;
     }
 
-    public void setnombre(String nombre){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
 
 
     public String getbandera(){
-        return nombre;
+        return bandera;
     }
 
-    public void setbandera(String bandera){
+    public void setBandera(String bandera){
         this.bandera = bandera;
     }
 }
